@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Lab_6
 {
+    [Serializable]
     class Empresa
     {
+        List<Division> Divisiones = new List<Division>();
         public Empresa()
         {
 

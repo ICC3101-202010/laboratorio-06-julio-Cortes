@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab_6
 {
+    [Serializable]
     class Departamento:Division
     {
     }
