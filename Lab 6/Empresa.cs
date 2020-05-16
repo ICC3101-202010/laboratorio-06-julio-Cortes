@@ -9,17 +9,21 @@ namespace Lab_6
     [Serializable]
     class Empresa
     {
-        List<Division> Divisiones = new List<Division>();
+        private List<Division> Divisiones = new List<Division>();
         public Empresa()
         {
 
         }
         public Empresa(string name, string rut)
         {
-            this.name = name;
-            this.rut = rut;
+            this.Name = name;
+            this.Rut = rut;
         }
-        string name=null;
-        string rut = null;
+        private string name=null;
+        private string rut = null;
+
+        public string Name { get => name; set => name = value; }
+        public string Rut { get => rut; set => rut = value; }
+        internal List<Division> Divisiones1 { get => Divisiones; set => Divisiones = value; }
     }
 }

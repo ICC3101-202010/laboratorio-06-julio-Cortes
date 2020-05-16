@@ -7,7 +7,12 @@ using System.Threading.Tasks;
 namespace Lab_6
 {
     [Serializable]
-    class Departamento:Division
+    public class Departamento : Division
     {
+        public Departamento(string name, Persona manager):base(name,manager)
+            {          
+                
+            }
+
     }
 }
