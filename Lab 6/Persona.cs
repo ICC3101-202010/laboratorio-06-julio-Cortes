@@ -9,7 +9,7 @@ namespace Lab_6
     [Serializable]
     public class Persona
     {
-        public Persona(string name, string lastName, string rut, string charge)
+        public Persona(string name, string lastName, int rut, string charge)
         {
             this.name = name;
             this.lastName = lastName;
@@ -19,12 +19,12 @@ namespace Lab_6
         }
         private string name;
         private string lastName;
-        private string rut;
+        private int rut;
         private string charge;
 
         public string Name { get => name; set => name = value; }
         public string LastName { get => lastName; set => lastName = value; }
-        public string Rut { get => rut; set => rut = value; }
+        public int Rut { get => rut; set => rut = value; }
         public string Charge { get => charge; set => charge = value; }
     }
 }

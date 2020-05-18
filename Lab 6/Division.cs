@@ -11,10 +11,8 @@ namespace Lab_6
     {
         protected string name;
         protected Persona manager;
-        protected List<Persona> personas = new List<Persona>();
 
         public string Name { get => name; set => name = value; }
-        public List<Persona> Personas { get => personas; set => personas = value; }
         public Persona Manager { get => manager; set => manager = value; }
         public Division(string name, Persona manager)
         {
